@@ -114,7 +114,6 @@ padding-top: 102px;
 }
    #a{
   background: url(img/home.png) no-repeat;
-  background-color: rgb(135,206,235,0.4);
   background-position: center top;
 }
    #a:hover{
@@ -125,6 +124,7 @@ padding-top: 102px;
    #b{
   background: url(img/block.png) no-repeat;
   background-position: center top;
+  background-color: rgb(135,206,235,0.4);
 }
    #b:hover{
   background: url(img/block2.png) no-repeat;
@@ -217,6 +217,9 @@ background: rgba(255,255, 255, 0.5);
 .content a:visited, a{
   color: white;
 
+}
+.content h2{
+  white-space: inherit;
 }
 
 #first {
