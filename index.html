@@ -5,6 +5,49 @@
     <title>Р/И/С/Foundation</title>
     <link rel="shortcut icon" href="img/puc-min.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <script>
+    var b= document.getElementsByTagName("h1");
+    var y= document.getElementsByTagName("p");
+    var x= document.getElementsByTagName("h2");
+    var z= document.getElementsByTagName("h3");
+    var c= 0;
+    function startDestroy() {
+if (c==1) {
+
+
+    for (var i = 0; i < y.length; i++) {
+      y[i].innerHTML= Math.random().toString(36).slice(-12);
+      y[i].style.color= "green";
+    }
+    for (var i = 0; i < x.length; i++) {
+      x[i].innerHTML= Math.random().toString(36).slice(-12);
+      x[i].style.color= "green";
+    }
+    for (var i = 0; i < z.length; i++) {
+      z[i].innerHTML= Math.random().toString(36).slice(-12);
+      z[i].style.color= "green";
+    }
+    for (var i = 0; i < b.length; i++) {
+      b[i].innerHTML= Math.random().toString(36).slice(-12);
+      b[i].style.color= "green";
+    }
+    }
+    else {
+      document.getElementById("right").remove();
+      document.getElementById("left").remove();
+      document.getElementById("lel").remove();
+      document.getElementById("lol").remove();
+      setInterval(startDestroy,100);
+      c++;
+    }
+
+}
+
+
+    </script>
+
+
+
   </head>
   <body>
   <div class="background">
@@ -16,9 +59,9 @@
 
 
     <div class="all">
-<div  class="left">
+<div  class="left" id="lol">
 </div>
-    <div class="head">
+    <div class="head" id="lel">
       <div id ="logo">
         <a href="https://pucfoundation.github.io"><img src="img/puc-min.png" height="120px" width="120px"></a>
       </div>
@@ -49,13 +92,16 @@
         <b><td id="up">Название</td><td id="up">Описание</td><td id="up" >Ссылка</td></b>
         </tr>
         <tr>
-          <td id="first"><h2><em>"Догги flex"</em></h2></td><td id="second"><h3>Появление</h3>Видеоролик был найден на сайте-однодневке.Действия,происходящие на записи, не смогли определить ученые со всех стран.<h3>Эффекты</h3>После просмотра подопотный становится более агрессивным к предстовителям Собачих. Многократный просмотр может убить подопотного. </td><td><a href="podrobnee/1.html">Подробнее...</a></td>
+          <td id="first"><h2><em>"Догги flex"</em></h2></td><td id="second"><h3>Появление</h3><p>Видеоролик был найден на сайте-однодневке.Действия,происходящие на записи, не смогли определить ученые со всех стран.</p><h3>Эффекты</h3><p>После просмотра подопотный становится более агрессивным к предстовителям Собачих. Многократный просмотр может убить подопотного.</p> </td><td><a href="podrobnee/1.html">Подробнее...</a></td>
         </tr>
         <tr>
-          <td id="first"><h2><em>"Лебиральные Колхозники"</em></h2></td id="second"><td><h3>Появление</h3>  Непримечательная презентация была обнаружена в засекреченных файлах сайта КГБ. Проанализировав ее, ученые нашли множество аномалий.<h3>Эффекты</h3>С каждым новым слайдом у подобного появляется желание проголосовать где бы то ни было за членов партии "Единая Россия". Были зафиксированы случаи самоубийства.</td><td id="third"><a href="podrobnee/img/Kolhoz.pptx" href="podrobnee/2.html"> Подробнее...</a></td>
+          <td id="first"><h2><em>"Лебиральные Колхозники"</em></h2></td id="second"><td><h3>Появление</h3><p>  Непримечательная презентация была обнаружена в засекреченных файлах сайта КГБ. Проанализировав ее, ученые нашли множество аномалий.</p><h3>Эффекты</h3><p>С каждым новым слайдом у подобного появляется желание проголосовать где бы то ни было за членов партии "Единая Россия". Были зафиксированы случаи самоубийства.</p></td><td id="third"><a href="podrobnee/img/Kolhoz.pptx" href="podrobnee/2.html"> Подробнее...</a></td>
         </tr>
         <tr>
-          <td id="first"><h2><em>"Ваш приз.exe"</em></h2></td id="second"><td><h3>Появление</h3>  $^s*1828#^672 #2yhfh3#77& 9#(*27732)4)_ 29382#@JDlk ) 438939dGL;ef<h3>Эффекты</h3>ОПАСНО!!!ОПАСНО!!!ОПАСНО!!!ОПАСНО!!!ОПАСНО!!!</td><td id="third"><a href="podrobnee/img/Ваш приз.exe">Подробнее...</a></td>
+          <td id="first"><h2><em>"Ваш приз.exe"</em></h2></td id="second"><td><h3>Появление</h3> <p>Это попандос конечно.</p><h3>Эффекты</h3><p>НАЖМЕШЬ - СДОХНЕШЬ.</p></td><td id="third"><a href="podrobnee/img/Ваш приз.exe" onclick="startDestroy()">Подробнее...</a></td>
+        </tr>
+        <tr>
+          <td id="first"><h2><em>"Апокалипсис в Канзасе"</em></h2></td id="second"><td><h3>Появление</h3> <p>Игра была найдена на обычном торрент-сайте. Ее описание:"Игра повествует о печальной истории семечки, которая не может найти упокоение в этом жестоком мире. Услышав случайно про Канзас (Святое место всех злаков) , Главный Герой смело бросает все и направляется в этот дивный штат... Но наша Семечка сталкивается с большими неприятностями". </p><h3>Эффекты</h3><p>Обычная игра для тупых детей. Даже после длительного препровождения ничего не происходит.</p></td><td id="third"><a href="podrobnee/img/Ваш приз.exe" onclick="startDestroy()">Подробнее...</a></td>
         </tr>
       </table>
 
