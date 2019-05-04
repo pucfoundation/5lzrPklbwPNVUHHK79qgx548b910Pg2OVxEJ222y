@@ -94,7 +94,7 @@ z-index: 3;
   text-align: center;
   margin-left:-1px;
   display: inline-block;
-  width: 14%;
+  width: 120px;
 }
   #menu a{
   color: white;
@@ -217,6 +217,7 @@ background: rgba(255,255, 255, 0.5);
 }
 .content h2{
   white-space: inherit;
+  color: #6E00FA;
 }
 
 #first {
