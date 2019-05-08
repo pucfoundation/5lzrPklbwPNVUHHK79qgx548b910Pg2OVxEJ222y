@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Р/И/С/Foundation</title>
+    <link rel="shortcut icon" href="img/puc-min.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="3.css">
+  </head>
+  <body>
+    <div id="back">
+  <a href="https://pucfoundation.github.io/Pfj3wpw83hkC7kqZ9zditc0oWgDy1ySVGGW0uVnEMDcK7WqtOc21RyfOov4MH6i9EOEcpzjveku9KYqxvKccXwReE9tj98h8uMU/"><img src="img/arrow.png" width="60px" height="60px"></a>
+    </div>
+    <script id="java" type="text/javascript">
+    var c= false;
+    var a= 0;
+    var b= 0;
+    var z= 50;
+    var y= 117;
+
+
+
+    function start() {
+      if (c==false) {
+        var t=setInterval(start,10)
+        c=true;
+        document.getElementById('start').innerHTML= " ";
+        document.getElementById('stop').style.visibility = "visible";
+
+      }
+
+    else if(c==true) {
+document.getElementById('stand').style.visibility = "hidden";
+document.getElementById('run').style.visibility = "visible";
+          a +=1;
+          b -=10;
+          if (z>40) {
+            z -=4;
+            y -=3
+          }
+          else if(z<60) {
+            z +=4;
+            y +=3
+          }
+            document.getElementById('energ').innerHTML = "Энергии выработано: "+a+"Дж";
+            document.getElementById('energ').style.marginLeft = z+"px";
+            document.getElementById('energ').style.marginTop = y+"px";
+            document.getElementById('anim').style.transform = "rotate("+b+"deg)";
+
+
+          }
+       }
+          function fast(){
+            if (c==true) {
+setInterval(start,500);
+            }
+            }
+function stop(){
+
+  alert("Этого парня не остановить.");
+}
+    </script>
+    <div class="all">
+<ul>
+ <li onclick="start()" id="start">Старт</li>
+ <li onclick="fast()" id="fast">Ускорить</li>
+ <li onclick="stop()" id="stop">Стоп</li>
+ </ul>
+ <h1 id="energ">Энергии выработано: 0 Дж</h1>
+    <div id="anim">
+
+</div>
+<div id="krug">
+<div id="mushik">
+<img id="run" src="img/run.gif">
+<img id="stand" src="img/stand.png">
+</div>
+
+    </div>
+</div>
+  </body>
+</html>
